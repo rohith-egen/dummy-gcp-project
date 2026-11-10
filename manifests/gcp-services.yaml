@@ -2,7 +2,8 @@ project_id: "dummy-test-project-123"
 environment: "staging"
 
 managed_services:
-    - name: Cloud Service Mesh
-      version: 1.27.5        # newer releases 1.38.10 / 1.39.5 are out; 1.27 is no longer supported
-    - name: Anthos Config Management
-      git_sync_version: v4.4.2   # fixed in v4.5.0 (security update)
+  - service: "Cloud Service Mesh"
+    version: "1.27.5"
+
+  - service: "Anthos Config Management"
+    git_sync_version: "v4.4.2"
