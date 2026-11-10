@@ -1,14 +1,7 @@
 project_id: "dummy-test-project-123"
 environment: "staging"
 
-managed_services:
-  - service: "Cloud SQL"
-    engine: "postgres"
-    version: "14.2"
-  
-  - service: "Google Kubernetes Engine"
-    cluster_version: "1.27.3-gke.100"
-    node_pools: "n2-standard-4"
-
-  - service: "Cloud Functions"
-    runtime: "nodejs18"
+- name: Cloud Service Mesh
+  version: 1.27.5        # newer releases 1.38.10 / 1.39.5 are out; 1.27 is no longer supported
+- name: Anthos Config Management
+  git_sync_version: v4.4.2   # fixed in v4.5.0 (security update)
