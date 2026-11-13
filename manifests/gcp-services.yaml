@@ -3,7 +3,7 @@ environment: "staging"
 
 managed_services:
   - service: "Cloud Service Mesh"
-    version: "1.27.5"
+    version: "1.28.0"
 
   - service: "Anthos Config Management"
     git_sync_version: "v4.4.2"
